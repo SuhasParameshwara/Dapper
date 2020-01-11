@@ -16,6 +16,7 @@ namespace ConsoleApp_Dapper
 			var connectionString = "Server = {Your Server Name}; Database = {Your Database Name}; Integrated Security=True;";
 
 			#region Create Table
+		        #openning database connection
 			using (var connection = new SqlConnection(connectionString))
 			{
 				var query = "CREATE TABLE [dbo].[CUSTOMER]" +
